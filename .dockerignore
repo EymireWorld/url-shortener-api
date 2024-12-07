@@ -1,0 +1,14 @@
+.venv/
+.git/
+**/__pycache__/
+
+.dockerignore
+.gitignore
+**/.gitkeep
+
+compose.yaml
+Dockerfile
+
+pyproject.toml
+README.md
+uv.lock

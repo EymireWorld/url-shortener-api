@@ -1,0 +1,26 @@
+[project]
+name = "url-shortener-api"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "alembic>=1.14.0",
+    "asyncpg>=0.30.0",
+    "fastapi[standard]>=0.115.6",
+    "pydantic-settings>=2.6.1",
+    "redis>=5.2.1",
+    "sqlalchemy[asyncio]>=2.0.36",
+]
+
+
+[tool.ruff]
+line-length = 100
+lint.select = ['I', 'F', 'E', 'W', 'N', 'UP', 'B', 'C4', 'SIM']
+lint.ignore = ['B008', 'B904']
+
+
+[tool.ruff.lint.isort]
+lines-after-imports = 2
+
+
+[tool.ruff.format]
+quote-style = "single"
